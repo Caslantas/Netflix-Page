@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Explora&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- -----Container----- -->
+    <article class="container">
+      <div class="container-1">
+        <h1>NET<span>FLIX</span></h1>
+        <p>Thank you for sign up at Netflix.Tell us more about yourself</p>
+      </div>
+
+      <header class="container-2">
+        <div class="kutu">
+          <br />
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            name="ad"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div class="kutu">
+          <label for="yaş">Age</label><br />
+          <input
+            type="number"
+            name="age"
+            id="yaş"
+            placeholder="Age"
+            min="18"
+            max="99"
+            required
+          />
+        </div>
+        <div class="kutu">
+          <label for="mail">E-mail</label><br />
+          <input
+            type="email"
+            name="eposta"
+            id="mail"
+            placeholder="example@netflix.com"
+            required
+          />
+          <div class="kutu">
+            Content Type <br />
+            <select name="content" id="content">
+              <option value="Movie">Movie</option>
+              <option value="Series">Series</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            Movie type <br />
+            <input type="checkbox" name="comedy" />
+            <label for="comedy">Comedy</label><br />
+            <input type="checkbox" name="action" />
+            <label for="action">Action</label><br />
+            <input type="checkbox" name="romance" />
+            <label for="romance">Romance</label><br />
+          </div>
+          <br />
+          <div>
+            Gender <br />
+            <input type="radio" name="cinsiyet" value="erkek" />
+            <label for="erkek">Male</label><br />
+            <input type="radio" name="cinsiyet" value="kadın" />
+            <label for="kadın">Female</label><br />
+            <input type="radio" name="cinsiyet" value="unisex" />
+            <label for="unisex">Other</label><br />
+          </div>
+          <br />
+          <div>
+            Feedback <br />
+            <textarea
+              name="Feedback"
+              id="conteiner"
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Comment "
+              required
+            >
+Enter Your Comment
+            </textarea>
+          </div>
+          <br />
+          <!-- ----BUTTON---- -->
+          <div>
+            <button>Send</button>
+          </div>
+        </div>
+      </header>
+    </article>
+  </body>
+</html>
